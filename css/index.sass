@@ -1,0 +1,93 @@
+/* ==========================================
+     Config
+     ========================================== */
+$primary-color: #004b65
+$secondary-color: #f8d9e8
+$background-color: #f8f8f8
+$error-color: #DD4343
+$warning-color: #E2E942
+$success-color: #26CA7B
+$primary-type: Verdana, Geneva, sans-serif
+$selection-background: #222
+
+@import "core/core"
+
+/* ==========================================
+     Extensions
+     ========================================== */
+@import "exts/icons"
+
+
+/* ==========================================
+     Modules
+     ========================================== */
+
+// @import "modules/my_module"
+
+
+/* ==========================================
+     Your Styles
+     ========================================== */
+
+body
+    background: $background-color
+    color: #222
+
+header
+    text-align: center
+    padding: 4em
+
+a
+    @include transition
+    color: $primary-color
+    text-decoration: none
+    &:hover
+        color: #222
+
+.logo
+    width: 160px
+    margin: 2em 0
+
+h1
+    font-family: 'EdmondSans'
+    font-size: 1.8em
+    letter-spacing: 0.15em
+    margin: 0.5em 0
+
+hr
+    margin: 0.2em auto
+    border-top: 2px solid rgba(23,23,23,0.1)
+.line__long
+    width: 16em
+.line__mid
+    width: 8em
+.line__short
+    width: 4em
+
+.social-media
+    a
+        color: #aaa
+        &:hover
+            color: #222
+    li
+        margin: 0 0.3em
+
+@font-face
+    font-family: 'EdmondSans'
+    src: url('fonts/edmondsans-bold-webfont.eot')
+    src: url('fonts/edmondsans-bold-webfont.eot?#iefix') format('embedded-opentype')
+    src: url('fonts/edmondsans-bold-webfont.woff') format('woff')
+    src: url('fonts/edmondsans-bold-webfont.ttf') format('truetype')
+    src: url('fonts/edmondsans-bold-webfont.svg#EdmondSans') format('svg')
+    font-weight: bold
+    font-style: normal
+
+@font-face
+    font-family: 'EdmondSans'
+    src: url('fonts/edmondsans-regular-webfont.eot')
+    src: url('fonts/edmondsans-regular-webfont.eot?#iefix') format('embedded-opentype')
+    src: url('fonts/edmondsans-regular-webfont.woff') format('woff')
+    src: url('fonts/edmondsans-regular-webfont.ttf') format('truetype')
+    src: url('fonts/edmondsans-regular-webfont.svg#EdmondSans') format('svg')
+    font-weight: normal
+    font-style: normal

@@ -1,0 +1,4 @@
+*.scssc
+*.sassc
+.DS_Store
+*.swp

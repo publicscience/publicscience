@@ -717,7 +717,7 @@ a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #004b65;
+  color: #f12e41;
   text-decoration: none; }
   a:hover {
     color: #222222; }
@@ -727,47 +727,18 @@ a {
   margin: 2em 0; }
 
 h1 {
-  font-family: "EdmondSans";
+  font-family: "futura-pt", "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
+  font-style: italic;
+  text-transform: lowercase;
+  color: #f12e41;
   font-size: 1.8em;
-  letter-spacing: 0.15em;
   margin: 0.5em 0; }
 
-hr {
-  margin: 0.2em auto;
-  border-top: 2px solid rgba(23, 23, 23, 0.1); }
-
-.line__long {
-  width: 16em; }
-
-.line__mid {
-  width: 8em; }
-
-.line__short {
-  width: 4em; }
-
-.social-media a {
-  color: #aaaaaa; }
-  .social-media a:hover {
-    color: #222222; }
-.social-media li {
-  margin: 0 0.3em; }
-
-@font-face {
-  font-family: "EdmondSans";
-  src: url("fonts/edmondsans-bold-webfont.eot");
-  src: url("fonts/edmondsans-bold-webfont.eot?#iefix") format("embedded-opentype");
-  src: url("fonts/edmondsans-bold-webfont.woff") format("woff");
-  src: url("fonts/edmondsans-bold-webfont.ttf") format("truetype");
-  src: url("fonts/edmondsans-bold-webfont.svg#EdmondSans") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: "EdmondSans";
-  src: url("fonts/edmondsans-regular-webfont.eot");
-  src: url("fonts/edmondsans-regular-webfont.eot?#iefix") format("embedded-opentype");
-  src: url("fonts/edmondsans-regular-webfont.woff") format("woff");
-  src: url("fonts/edmondsans-regular-webfont.ttf") format("truetype");
-  src: url("fonts/edmondsans-regular-webfont.svg#EdmondSans") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+.social-media {
+  font-size: 1.4em; }
+  .social-media a {
+    color: #aaaaaa; }
+    .social-media a:hover {
+      color: #222222; }
+  .social-media li {
+    margin: 0 0.3em; }

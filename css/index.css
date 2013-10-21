@@ -717,7 +717,7 @@ a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #f12e41;
+  color: #6c2ef1;
   text-decoration: none; }
   a:hover {
     color: #222222; }
@@ -730,7 +730,7 @@ h1 {
   font-family: "futura-pt", "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
   font-style: italic;
   text-transform: lowercase;
-  color: #f12e41;
+  color: #6c2ef1;
   font-size: 1.8em;
   margin: 0.5em 0; }
 

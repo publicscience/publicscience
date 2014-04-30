@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Karla:400,700);
 /* ==========================================
  * Config
  * ========================================== */
@@ -709,7 +710,7 @@ body {
 
 header {
   text-align: center;
-  padding: 4em; }
+  padding: 8em 4em; }
 
 a {
   -webkit-transition: all 0.2s ease-in-out;
@@ -723,16 +724,15 @@ a {
     color: #222222; }
 
 .logo {
-  width: 160px;
-  margin: 2em 0; }
+  width: 50px;
+  margin: 2em 0 1em 0; }
 
 h1 {
-  font-family: "futura-pt", "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
-  font-style: italic;
+  font-family: "Karla", "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
   text-transform: lowercase;
-  color: #6c2ef1;
-  font-size: 1.8em;
-  margin: 0.5em 0; }
+  font-size: 1em;
+  color: #888888;
+  margin: 0; }
 
 .social-media {
   font-size: 1.4em; }
@@ -742,3 +742,14 @@ h1 {
       color: #222222; }
   .social-media li {
     margin: 0 0.3em; }
+
+blockquote {
+  text-align: left;
+  max-width: 480px;
+  margin: 4em auto 0 auto;
+  color: #222222;
+  font-size: 1.1em;
+  font-family: "Karla", "Helvetica Neue" "Helvetica", "Arial", "sans-serif"; }
+  blockquote footer {
+    text-align: right;
+    font-size: 0.8em; }

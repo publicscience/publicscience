@@ -705,7 +705,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
  * Your Styles
  * ========================================== */
 body {
-  background: #f8f8f8;
+  background: #37d1b1;
   color: #222222; }
 
 header {
@@ -731,15 +731,15 @@ h1 {
   font-family: "Karla", "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
   text-transform: lowercase;
   font-size: 1em;
-  color: #888888;
+  color: white;
   margin: 0; }
 
 .social-media {
   font-size: 1.4em; }
   .social-media a {
-    color: #aaaaaa; }
+    color: #28ad91; }
     .social-media a:hover {
-      color: #222222; }
+      color: #020706; }
   .social-media li {
     margin: 0 0.3em; }
 

@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Karla:400,700);
+@charset "UTF-8";
 /* ==========================================
  * Config
  * ========================================== */
@@ -560,7 +560,6 @@ textarea {
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {
@@ -648,7 +647,6 @@ img {
   src: url("fonts/icons.eot?#iefix") format("embedded-opentype"), url("fonts/icons.woff") format("woff"), url("fonts/icons.ttf") format("truetype"), url("fonts/icons.svg#icons") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "icons";
   font-weight: normal;
@@ -698,6 +696,38 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-twitter:before {
   content: "\f102"; }
 
+/**
+ * @license
+ * MyFonts Webfont Build ID 2893412, 2014-10-01T14:58:27-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Larsseit-Light by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/larsseit/light/
+ * 
+ * Webfont: Larsseit-LightItalic by Type Dynamic
+ * URL: http://www.myfonts.com/fonts/typedynamic/larsseit/light-italic/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2893412
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2013 by Type Dynamic. All rights reserved.
+ * 
+ * © 2014 MyFonts Inc
+*/
+@font-face {
+  font-family: 'Larsseit';
+  src: url("fonts/Larsseit/Larsseit-Light.eot");
+  src: url("fonts/Larsseit/Larsseit-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Larsseit/Larsseit-Light.woff") format("woff"), url("fonts/Larsseit/Larsseit-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Larsseit';
+  font-style: italic;
+  src: url("fonts/Larsseit/Larsseit-LightItalic.eot");
+  src: url("fonts/Larsseit/Larsseit-LightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Larsseit/Larsseit-LightItalic.woff") format("woff"), url("fonts/Larsseit/Larsseit-LightItalic.ttf") format("truetype"); }
 /* ==========================================
  * Modules
  * ========================================== */
@@ -705,12 +735,14 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
  * Your Styles
  * ========================================== */
 body {
-  background: #37d1b1;
-  color: #222222; }
+  background: #d2faff;
+  color: #333333;
+  font-family: "Larsseit";
+  font-weight: 100; }
 
 header {
   text-align: center;
-  padding: 8em 4em; }
+  padding: 8em 4em 1em 4em; }
 
 a {
   -webkit-transition: all 0.2s ease-in-out;
@@ -718,28 +750,50 @@ a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #6c2ef1;
+  color: #f35178;
   text-decoration: none; }
-  a:hover {
-    color: #222222; }
 
 .logo {
   width: 50px;
   margin: 2em 0 1em 0; }
 
-h1 {
-  font-family: "Karla", "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
-  text-transform: lowercase;
-  font-size: 1em;
-  color: white;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
   margin: 0; }
+
+h1 {
+  font-size: 1.2em;
+  color: #f35178; }
+
+.productions {
+  margin: 6em 2em;
+  text-align: center; }
+  .productions article {
+    background: white;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width: 300px;
+    padding: 1.5em;
+    margin: 0 0.5em;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.05); }
+    .productions article img {
+      margin: 0 auto;
+      display: block; }
+    .productions article h6 {
+      margin: 1.5em 0 0em 0;
+      font-size: 1.2em; }
+    .productions article p {
+      color: #666666;
+      margin: 0.5em 0;
+      font-size: 0.9em; }
 
 .social-media {
   font-size: 1.4em; }
   .social-media a {
-    color: #28ad91; }
+    color: #00bbd2; }
     .social-media a:hover {
-      color: #020706; }
+      color: #003339; }
   .social-media li {
     margin: 0 0.3em; }
 

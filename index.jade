@@ -1,0 +1,28 @@
+extends inc/layout
+
+mixin production(name, desc)
+    article(style="background-image:url('/img/productions/"+name+".jpg');")
+        a(href="prods/"+name)
+            h6= name
+            p= desc
+
+block main
+    header
+        img(src="img/logo.png", class="logo", alt="Public Science")
+        h1 Public Science
+
+    ul(class="social-media list__horizontal__center")
+        li
+            a(href="https://github.com/publicscience")
+                span(class="icon-github")
+        li
+            a(href="https://twitter.com/pub_sci")
+                span(class="icon-twitter")
+
+    section.productions
+        +production("argos", "get caught up with news more quickly")
+        +production("nomadic", "lightweight, self-hosted note management")
+        +production("mob", "massive communication")
+        +production("brain", "outsource your internet personality")
+        +production("nito", "culturally-encoded steganography")
+        +production("glimpse", "stream twitter as images")

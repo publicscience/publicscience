@@ -1,0 +1,12 @@
+include ../../inc/mixins
+extends ../../inc/layout
+
+block main
+    +production("argos", {
+        "source code": "https://github.com/publicscience/argos"
+    }, [
+        "/img/shots/argos/onboarding.jpg",
+        "/img/shots/argos/web_example.jpg",
+        "/img/shots/argos/proto.jpg"
+    ])
+        p "This is my description"

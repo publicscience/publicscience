@@ -1,0 +1,9 @@
+include ../../inc/mixins
+extends ../../inc/layout
+
+block main
+    +production("brain", {
+        "the brain in action": "https://twitter.com/pub_sci",
+        "source code": "https://github.com/publicscience/brain"
+    })
+        p "This is my description"

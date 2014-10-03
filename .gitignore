@@ -2,3 +2,7 @@
 *.sassc
 .DS_Store
 *.swp
+node_modules/
+.fontcustom-manifest.json
+*.html
+!inc/*.html

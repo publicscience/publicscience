@@ -3,14 +3,8 @@
 
 # TEAM
 
-    PUBLIC SCIENCE // publicscience.co // @_publicscience
-    Francis Tseng -- Development and Design -- @frnsys
+    PUBLIC SCIENCE // publicscience.co // @pub_sci
 
 # THANKS
 
     friends
-
-# TECHNOLOGY COLOPHON
-
-    HTML5, CSS3
-    Normalize.css, jQuery, Modernizr

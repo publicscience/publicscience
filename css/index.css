@@ -1,7 +1,8 @@
-@charset "UTF-8";
 /* ==========================================
  * Config
  * ========================================== */
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono);
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -370,11 +371,13 @@ textarea {
  * Customize the background color to match your design.
  */
 ::-moz-selection {
-  background: #222222;
+  background: #222;
+  color: #fff;
   text-shadow: none; }
 
 ::selection {
-  background: #222222;
+  background: #222;
+  color: #fff;
   text-shadow: none; }
 
 /*
@@ -696,52 +699,15 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-twitter:before {
   content: "\f102"; }
 
-/**
- * @license
- * MyFonts Webfont Build ID 2893412, 2014-10-01T14:58:27-0400
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
- * 
- * You may obtain a valid license at the URLs below.
- * 
- * Webfont: Larsseit-Light by Type Dynamic
- * URL: http://www.myfonts.com/fonts/typedynamic/larsseit/light/
- * 
- * Webfont: Larsseit-LightItalic by Type Dynamic
- * URL: http://www.myfonts.com/fonts/typedynamic/larsseit/light-italic/
- * 
- * 
- * License: http://www.myfonts.com/viewlicense?type=web&buildid=2893412
- * Licensed pageviews: 10,000
- * Webfonts copyright: Copyright (c) 2013 by Type Dynamic. All rights reserved.
- * 
- * © 2014 MyFonts Inc
-*/
-@font-face {
-  font-family: 'Larsseit';
-  src: url("fonts/Larsseit/Larsseit-Light.eot");
-  src: url("fonts/Larsseit/Larsseit-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Larsseit/Larsseit-Light.woff") format("woff"), url("fonts/Larsseit/Larsseit-Light.ttf") format("truetype"); }
-@font-face {
-  font-family: 'Larsseit';
-  font-style: italic;
-  src: url("fonts/Larsseit/Larsseit-LightItalic.eot");
-  src: url("fonts/Larsseit/Larsseit-LightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Larsseit/Larsseit-LightItalic.woff") format("woff"), url("fonts/Larsseit/Larsseit-LightItalic.ttf") format("truetype"); }
-/* ==========================================
- * Modules
- * ========================================== */
 /* ==========================================
  * Your Styles
  * ========================================== */
 body {
-  background: #d2faff;
-  color: #333333;
-  font-family: "Larsseit";
-  font-weight: 100; }
+  background: #ffdace;
+  color: #333;
+  font-family: "Work Sans", sans-serif; }
 
-header {
-  text-align: center;
+header, .people {
   padding: 8em 4em 1em 4em; }
 
 a {
@@ -750,117 +716,46 @@ a {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #f35178;
+  color: #E66060;
   text-decoration: none; }
 
 .logo {
-  width: 50px;
-  margin: 2em 0 1em 0; }
+  width: 96px;
+  margin: 2em 0 1em 0;
+  float: right; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 100;
   margin: 0; }
 
+h3, h4, h5, h6 {
+  font-weight: normal; }
+
 h1 {
-  font-size: 1.2em;
-  color: #f35178; }
+  font-size: 5em;
+  color: #1DC53D;
+  line-height: 1;
+  font-weight: 400; }
 
 h2 {
+  font-size: 2.2em;
   font-style: italic;
-  color: rgba(0, 0, 0, 0.25);
-  text-align: center;
-  margin: 2em 0 0 0; }
+  color: rgba(0, 0, 0, 0.25); }
 
-.productions {
-  padding: 6em 2em;
-  text-align: center;
-  letter-spacing: 1em; }
-  .productions article {
-    background: white;
-    background-size: cover;
-    background-position: top center;
-    width: 320px;
-    max-width: 100%;
-    min-height: 400px;
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin: 0 0 1em 0;
-    letter-spacing: 0;
-    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15); }
-    .productions article h6, .productions article p {
-      background: #ede42c;
-      color: #111111;
-      padding: 0.4em; }
-    .productions article h6 {
-      margin: 1.5em 0 0em 0;
-      font-size: 1.6em;
-      padding: 0 0.4em; }
-    .productions article p {
-      margin: 0.5em 0;
-      font-size: 0.9em; }
-    .productions article a {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 1.5em;
-      background: transparent; }
-      .productions article a:hover {
-        background: rgba(0, 0, 0, 0.2); }
+a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy; }
 
 .social-media {
   font-size: 1.4em; }
   .social-media a {
-    color: #00bbd2; }
-    .social-media a:hover {
-      color: #003339; }
+    text-decoration: underline;
+    text-decoration-style: dotted; }
   .social-media li {
     margin: 0 0.3em; }
 
-.background, .dots {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; }
+.people {
+  font-family: "Fira Mono"; }
+  .people a {
+    color: #333; }
 
-.background {
-  background-size: cover;
-  background-position: center center;
-  z-index: -2; }
-
-.dots {
-  z-index: -1; }
-
-.production {
-  text-align: center; }
-  .production .stage {
-    padding: 1em;
-    letter-spacing: 1em; }
-  .production .info, .production .shots {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    letter-spacing: 0; }
-  .production .info {
-    width: 400px;
-    max-width: 100%; }
-  .production h2, .production .desc {
-    background: #ede42c;
-    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15); }
-  .production h2 {
-    margin: 0 0 0.5em 0;
-    padding: 0.3em 0.5em;
-    color: #111111;
-    text-align: left; }
-  .production .desc {
-    padding: 0.6em 1em 1.5em 1em; }
-  .production .shots {
-    width: 600px;
-    max-width: 100%; }
-    .production .shots li {
-      margin: 0 0 1em 0;
-      box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15); }
+/*# sourceMappingURL=index.css.map */

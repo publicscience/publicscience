@@ -1,11 +1,15 @@
 /* ==========================================
      Config
      ========================================== */
-$primary-color: #F35178
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700)
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono)
+
+$primary-color: #1DC53D
 $secondary-color: #f8d9e8
-$highlight-color: #EDE42C
-$background-color: #D2FAFF
+$highlight-color: #FFDC9E
+$background-color: #ffdace
 $selection-background: #222
+$selection-color: #fff
 
 @import "core/core"
 
@@ -13,14 +17,6 @@ $selection-background: #222
      Extensions
      ========================================== */
 @import "exts/icons"
-@import "exts/fonts"
-
-
-/* ==========================================
-     Modules
-     ========================================== */
-
-// @import "modules/my_module"
 
 
 /* ==========================================
@@ -30,129 +26,52 @@ $selection-background: #222
 body
     background: $background-color
     color: #333
-    font-family: "Larsseit"
-    font-weight: 100
+    font-family: "Work Sans", sans-serif
 
-header
-    text-align: center
+header, .people
     padding: 8em 4em 1em 4em
 
 a
     @include transition
-    color: $primary-color
+    color: #E66060
     text-decoration: none
 
 .logo
-    width: 50px
+    width: 96px
     margin: 2em 0 1em 0
+    float: right
 
 h1,h2,h3,h4,h5,h6
-    font-weight: 100
     margin: 0
 
+h3,h4,h5,h6
+    font-weight: normal
+
 h1
-    font-size: 1.2em
+    font-size: 5em
     color: $primary-color
+    line-height: 1
+    font-weight: 400
 
 h2
+    font-size: 2.2em
     font-style: italic
     color: rgba(0,0,0,0.25)
-    text-align: center
-    margin: 2em 0 0 0
 
-.productions
-    padding: 6em 2em
-    text-align: center
-    letter-spacing: 1em
-
-    article
-        background: #fff
-        background-size: cover
-        background-position: top center
-        width: 320px
-        max-width: 100%
-        min-height: 400px
-        position: relative
-        display: inline-block
-        vertical-align: top
-        text-align: left
-        margin: 0 0 1em 0
-        letter-spacing: 0
-        box-shadow: 4px 4px 0 rgba(0,0,0,0.15)
-
-        h6, p
-            background: $highlight-color
-            color: #111
-            padding: 0.4em
-
-        h6
-            margin: 1.5em 0 0em 0
-            font-size: 1.6em
-            padding: 0 0.4em
-
-        p
-            margin: 0.5em 0
-            font-size: 0.9em
-
-        a
-            position: absolute
-            top: 0
-            bottom: 0
-            left: 0
-            right: 0
-            padding: 1.5em
-            background: rgba(0,0,0,0)
-            &:hover
-                background: rgba(0,0,0,0.2)
+a
+    &:hover
+        text-decoration: underline
+        text-decoration-style: wavy
 
 .social-media
     font-size: 1.4em
     a
-        color: darken($background-color, 50%)
-        &:hover
-            color: darken($background-color, 80%)
+        text-decoration: underline
+        text-decoration-style: dotted
     li
         margin: 0 0.3em
 
-.background, .dots
-    position: fixed
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-.background
-    background-size: cover
-    background-position: center center
-    z-index: -2
-.dots
-    z-index: -1
-
-.production
-    text-align: center
-    .stage
-        padding: 1em
-        letter-spacing: 1em
-    .info, .shots
-        display: inline-block
-        vertical-align: top
-        text-align: left
-        letter-spacing: 0
-    .info
-        width: 400px
-        max-width: 100%
-    h2, .desc
-        background: $highlight-color
-        box-shadow: 4px 4px 0 rgba(0,0,0,0.15)
-    h2
-        margin: 0 0 0.5em 0
-        padding: 0.3em 0.5em
-        color: #111
-        text-align: left
-    .desc
-        padding: 0.6em 1em 1.5em 1em
-    .shots
-        width: 600px
-        max-width: 100%
-        li
-            margin: 0 0 1em 0
-            box-shadow: 4px 4px 0 rgba(0,0,0,0.15)
+.people
+    font-family: "Fira Mono"
+    a
+        color: #333

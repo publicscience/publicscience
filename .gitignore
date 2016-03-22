@@ -6,3 +6,5 @@ node_modules/
 .fontcustom-manifest.json
 *.html
 !inc/*.html
+*.map
+sync

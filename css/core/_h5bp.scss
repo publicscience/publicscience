@@ -32,11 +32,13 @@ textarea {
 
 ::-moz-selection {
     background: $selection-background;
+    color: $selection-color;
     text-shadow: none;
 }
 
 ::selection {
     background: $selection-background;
+    color: $selection-color;
     text-shadow: none;
 }
 

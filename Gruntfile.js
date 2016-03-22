@@ -29,7 +29,7 @@ module.exports = function(grunt) {
                 // Ignore:
                 '!css/exts/_icons.scss'
 			],
-			tasks: ['sass', 'jade', 'fontcustom']
+			tasks: ['sass', 'jade']
 		},
 
 		// Compile SASS/SCSS
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         sass: {
             app: {
                 files: {
-                    'css/index.css': 'css/index.sass'	
+                    'css/index.css': 'css/index.sass'
                 }
             }
         },
@@ -62,45 +62,13 @@ module.exports = function(grunt) {
                     ext: '.html'
                 }]
 			}
-		},
-
-		shell: {
-            // Compile Font Custom font.
-			fontcustom: {
-				command: 'fontcustom compile src/icons'
-			}
-		},
-		copy: {
-            // Copy Font Custom fonts to proper place.
-			fontcustom: {
-				files: [
-					{src: ['src/icons/fontcustom/*.woff'], dest: 'css/fonts/icons.woff'},
-					{src: ['src/icons/fontcustom/*.eot'],  dest: 'css/fonts/icons.eot'},
-					{src: ['src/icons/fontcustom/*.svg'],  dest: 'css/fonts/icons.svg'},
-					{src: ['src/icons/fontcustom/*.ttf'],  dest: 'css/fonts/icons.ttf'}
-				]
-			}
-		},
-		replace: {
-            // Replace Font Custom CSS.
-			fontcustom: {
-				src: ['src/icons/fontcustom/fontcustom.css'],
-				dest: ['css/exts/_icons.scss'],
-				replacements: [{
-					from: /fontcustom_[^.]+/g,
-					to: 'fonts/icons'
-				}, {
-					from: 'fontcustom',
-					to: 'icons'
-				}]
-			}
 		}
+
 	});
 
 	// Define grunt tasks
 	// =======================================
 	grunt.registerTask('default', ['sass', 'jade', 'connect', 'watch']);
-	grunt.registerTask('fontcustom', ['shell:fontcustom', 'copy:fontcustom', 'replace:fontcustom']);
 
 	// Load grunt packages
 	// =======================================
@@ -108,8 +76,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-jade');
 	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-text-replace');
-	grunt.loadNpmTasks('grunt-shell');
 
 };

@@ -638,7 +638,7 @@ img {
   vertical-align: middle; }
 
 body {
-  background: #fff6ce;
+  background: #efefef;
   color: #333;
   font-family: "Helvetica", "Arial", "sans-serif"; }
 
@@ -655,9 +655,12 @@ a {
   text-decoration: none; }
 
 .logo {
-  width: 96px;
+  width: 280px;
   margin: 2em 0 1em 0;
-  float: right; }
+  position: fixed;
+  top: 0;
+  right: 40px;
+  z-index: -1; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
@@ -669,13 +672,14 @@ h1 {
   font-size: 5em;
   color: #fff;
   line-height: 1;
-  text-shadow: -1px -1px 0 #84e1ff, 1px -1px 0 #84e1ff, -1px 1px 0 #84e1ff, 1px 1px 0 #84e1ff;
+  text-shadow: 2px 2px 0px #9eb7ff;
   word-break: break-all; }
 
 h2 {
   font-size: 2.2em;
   font-style: italic;
-  color: rgba(0, 0, 0, 0.25); }
+  color: rgba(255, 255, 255, 0.3);
+  text-shadow: 2px 2px 0 #61c2ff; }
 
 a:hover {
   text-decoration: underline;
@@ -686,9 +690,22 @@ a:hover {
 
 .residency {
   margin: 1em 0 2em 0; }
+  .residency li {
+    color: #ff3131; }
+  .residency .authors {
+    margin-left: 0.6em; }
+    .residency .authors a {
+      color: #718CC3; }
+  .residency .project {
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 2px 2px 1px #53bcff;
+    font-size: 1.8em;
+    font-weight: bold; }
 
 footer {
   font-style: italic;
   color: rgba(0, 0, 0, 0.1); }
+  footer a, footer a:visited {
+    color: rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=index.css.map */

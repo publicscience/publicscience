@@ -1,7 +1,6 @@
 $primary-color: #1DC53D
-$secondary-color: #84e1ff
 $highlight-color: #FFDC9E
-$background-color: #fff6ce
+$background-color: #efefef
 $selection-background: #222
 $selection-color: #fff
 
@@ -21,9 +20,12 @@ a
     text-decoration: none
 
 .logo
-    width: 96px
+    width: 280px
     margin: 2em 0 1em 0
-    float: right
+    position: fixed
+    top: 0
+    right: 40px
+    z-index: -1
 
 h1,h2,h3,h4,h5,h6
     margin: 0
@@ -35,13 +37,14 @@ h1
     font-size: 5em
     color: #fff
     line-height: 1
-    text-shadow: -1px -1px 0 $secondary-color, 1px -1px 0 $secondary-color, -1px 1px 0 $secondary-color, 1px 1px 0 $secondary-color
+    text-shadow: 2px 2px 0px rgb(158, 183, 255)
     word-break: break-all
 
 h2
     font-size: 2.2em
     font-style: italic
-    color: rgba(0,0,0,0.25)
+    color: rgba(255, 255, 255, 0.3)
+    text-shadow: 2px 2px 0 rgb(97, 194, 255)
 
 a
     &:hover
@@ -53,7 +56,21 @@ a
 
 .residency
     margin: 1em 0 2em 0
+    li
+        color: #ff3131
+    .authors
+        margin-left: 0.6em
+        a
+            color: #718CC3
+    .project
+        color: rgba(255, 255, 255, 0.6)
+        text-shadow: 2px 2px 1px rgb(83, 188, 255)
+        font-size: 1.8em
+        font-weight: bold
 
 footer
     font-style: italic
     color: rgba(0,0,0,0.1)
+    a, a:visited
+        color: rgba(0,0,0,0.1)
+
